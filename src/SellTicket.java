@@ -24,6 +24,8 @@ public class SellTicket implements Runnable{
 
 
     private synchronized static  void sellTicket() {
+        //synchronized 同步代码块  锁 任何一个对象
+
         if (ticketCount>0){
             ticketCount--;
             System.out.println(Thread.currentThread().getName()+"余票还剩"+ticketCount+"张");
