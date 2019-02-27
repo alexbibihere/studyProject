@@ -1,17 +1,32 @@
 Collection 是最基本的集合接口
 list、set继承collection
 
-list下  有ArrayList、LinkedList、Vector
+List
 
-ArrayList 底层是数组，具有查询快(查找有下标、所以快)，增删慢(因为数组删除一个元素，之后的元素都要前移，消耗资源大)
+list特点： 有序、可重复
 
-LinkedList 底层是双向链表，具有增删快，查询慢
+list下常用子类：ArrayList、LinkedList、Vector
+
+ArrayList 底层是数组，线程不安全，查询快(查找有下标、所以快)，增删慢(因为数组删除一个元素，之后的元素都要前移，消耗资源大)
+
+LinkedList 底层是双向链表，线程不安全，增删快，查询慢
 
 Vector 是线程安全的，因为使用了Sychronized方法，性能上比ArrayList差些
 
 
 Set
 
+Set集合的特点是 元素不可重复
+
+Set常用子类：HahsSet、TreeSet、LinkedHashSet
+
+HahsSet：底层数据结构是哈希表(是一个元素为链表的数组)
+
+TreeSet:底层数据结构是红黑树，保证元素的排序方式
+
+LinkedHashSet:底层数据结构有哈希表和链表组成
+
+Map
 
 Map 没有继承Collection接口
 
