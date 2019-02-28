@@ -1,3 +1,5 @@
+package Example;
+
 /**
  * @author: yan
  * @Date: 2018/1/16/0016 21:16
@@ -5,7 +7,7 @@
  */
 public class Waiter implements Runnable{
 
-    private  Message msg;
+    private Message msg;
 
     public Waiter(Message msg) {
         this.msg = msg;

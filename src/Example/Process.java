@@ -1,3 +1,5 @@
+package Example;
+
 /**
  * @author: yan
  * @Date: 2018/1/16/0016 18:40
@@ -10,10 +12,10 @@ public class Process {
 
      public static void main(String[] args) {
          //实现Runnble 接口需要new Thread   但是继承Thread类不需要
-//            Thread t1 = new Thread(new SellTicket(),"窗口1");
-//            Thread t2 = new Thread(new SellTicket(),"窗口2");
-//            Thread t3 = new Thread(new SellTicket(),"窗口3");
-//            Thread t4 = new Thread(new SellTicket(),"窗口4");
+//            Thread t1 = new Thread(new Example.SellTicket(),"窗口1");
+//            Thread t2 = new Thread(new Example.SellTicket(),"窗口2");
+//            Thread t3 = new Thread(new Example.SellTicket(),"窗口3");
+//            Thread t4 = new Thread(new Example.SellTicket(),"窗口4");
 //            t1.start();
 //            t2.start();
 //            t3.start();

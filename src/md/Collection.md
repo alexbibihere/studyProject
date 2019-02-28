@@ -1,7 +1,7 @@
-Collection 是最基本的集合接口
+**Collection** 是最基本的集合接口
 list、set继承collection
 
-List
+**List**
 
 list特点： 有序、可重复
 
@@ -14,7 +14,7 @@ LinkedList 底层是双向链表，线程不安全，增删快，查询慢
 Vector 是线程安全的，因为使用了Sychronized方法，性能上比ArrayList差些
 
 
-Set
+**Set**
 
 Set集合的特点是 元素不可重复
 
@@ -26,7 +26,7 @@ TreeSet:底层数据结构是红黑树，保证元素的排序方式
 
 LinkedHashSet:底层数据结构有哈希表和链表组成
 
-Map
+**Map**
 
 Map 没有继承Collection接口
 
@@ -36,4 +36,4 @@ HashMap 是一个key-vaue形式的键值对，允许null
 
 
 
-Vector   是同步的
+**Vector**   是同步的

@@ -7,7 +7,7 @@
 实现Runnable接口，重写run方法
 
 
-1.继承Thread类，重写run方法
+**1.继承Thread类，重写run方法**
 
 public class MyThread extends Thread{
 
@@ -17,7 +17,7 @@ public class MyThread extends Thread{
     }
 }
 
-2.实现Runnable接口，重写run方法
+**2.实现Runnable接口，重写run方法**
 
 public class MyRunnable implements Runnable{
 

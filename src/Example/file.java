@@ -1,3 +1,5 @@
+package Example;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,7 +15,7 @@ public class file {
      public static void main(String args[]) throws IOException {
 //          io();
          File file = new File("C:\\Users\\WISIG\\Desktop\\b.txt");
-        // read file to console
+        // read Example.file to console
          if (file.exists()){
             Scanner scanner = new Scanner(file);
             while(scanner.hasNext()){
@@ -25,9 +27,9 @@ public class file {
 
     public static void io() throws IOException {
         File file = new File("C:\\Users\\WISIG\\Desktop\\b.txt");
-//        if(file.isDirectory()){
+//        if(Example.file.isDirectory()){
 //            System.out.println("是个文件夹");
-//            File[] files = file.listFiles();
+//            File[] files = Example.file.listFiles();
 //            System.out.println();
 //        }
         if (file.exists()){
@@ -41,7 +43,7 @@ public class file {
             printWriter.println("melody");
             printWriter.close();
         }
-//        if(file.isFile()){
+//        if(Example.file.isFile()){
 //            System.out.println("是个文件");
 //        }
     }
