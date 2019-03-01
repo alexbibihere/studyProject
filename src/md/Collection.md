@@ -34,6 +34,8 @@ HashTable 继承Map接口，HashTable是同步的
 
 HashMap 是一个key-vaue形式的键值对，允许null
 
+TreeMap
 
+ConcurrentHashMap
 
 **Vector**   是同步的
