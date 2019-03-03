@@ -35,3 +35,15 @@ start()：首先启动线程，然后再由jvm去调用该线程的run()方法
 
 一般都是使用实现Runnable接口，因为java只支持单继承、多实现
 并发运行任务和运行机制解耦
+
+
+## 使用Sychronized关键字
+-  修饰代码块  
+   public synchronized void addCount(){}
+-  修饰方法  
+   public static synchronized void addCount(){}
+   
+   修饰代码块，synchronized使用的就是当前方法调用时所属的那个实例的【内置锁】
+   
+   修饰方法时，synchronized使用的就是当前方法所属的类对象的锁
+   
