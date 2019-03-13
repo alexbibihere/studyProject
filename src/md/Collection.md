@@ -33,8 +33,10 @@ Map 没有继承Collection接口
 HashTable 继承Map接口，HashTable是同步的
 
 HashMap 是一个key-vaue形式的键值对，允许null
-
-TreeMap
+-  **HashMap是最常用的一个实现。HashMap使用hash映射来存取数据，这个速度是相当快，是O(1)的速度。其容量capacity，和负载因子load
+   factor可以在一开始设定。当元素个数达到capacity*load factor的时候，就会进行扩容**
+    
+ TreeMap
 
 ConcurrentHashMap
 
