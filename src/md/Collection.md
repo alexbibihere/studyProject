@@ -1,7 +1,7 @@
 **Collection** 是最基本的集合接口
 list、set继承collection
 
-**List**
+**ArrayList**
 
 list特点： 有序、可重复
 

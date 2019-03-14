@@ -48,7 +48,7 @@ AIO：Asynchronous IO 是Nio的升级，实现了异步非堵塞IO，异步IO的
 Tomcat weblogic
 19.Collection 和 Collections 有什么区别？
 Collection是java集合
-20.List、Set、Map 之间的区别是什么？
+20.ArrayList、Set、Map 之间的区别是什么？
 List底层是数组  无序的
 Set 底层是链表  有序的
 Map 底层是红黑树  key-value
@@ -62,7 +62,7 @@ HashMap底层是红黑树
 25.ArrayList 和 LinkedList 的区别是什么？
 ArrayList底层是数组的 查询快，根据下标查找 ，增删慢 ，数据要移动消耗资源
 LinkedList 底层是双向链表，查询慢  增删快
-26.如何实现数组和 List 之间的转换？
+26.如何实现数组和 ArrayList 之间的转换？
 
 27.ArrayList 和 Vector 的区别是什么？
 ArrayList是线程不安全的， 
