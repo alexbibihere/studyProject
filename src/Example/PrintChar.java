@@ -6,7 +6,7 @@ package Example;
  * @Description: 实现Runnable接口  和 继承 Thread类
  */
 public class PrintChar extends Thread{
-
+    //常用的继承Thread   因为java单继承多实现
     private char c;
     private int times;
 
