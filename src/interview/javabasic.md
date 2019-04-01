@@ -10,14 +10,17 @@ Q：抽象类和接口的异同？ Q：为什么匿名内部类中使用局部�
 Q：Object有哪些公用方法？
 
 ## 集合
- Q：Java集合框架中有哪些类？都有什么特点
-Q：集合、数组、泛型的关系，并比较 Q：ArrayList和LinkList的区别？
-Q：ArrayList和Vector的区别？ Q：HashSet和TreeSet的区别？
-Q：HashMap和Hashtable的区别？
-Q：HashMap在put、get元素的过程？体现了什么数据结构？ Q：如何解决Hash冲突？
-Q：如何保证HashMap线程安全？什么原理？ Q：HashMap是有序的吗？如何实现有序？
-Q：HashMap是如何扩容的？如何避免扩容？
-Q：hashcode()的作用，与equal()有什么区别？
+ Q：Java集合框架中有哪些类？都有什么特点 Q：集合、数组、泛型的关系，并比较
+ Q：ArrayList和LinkList的区别？ 
+ Q：ArrayList和Vector的区别？
+ Q：HashSet和TreeSet的区别？ 
+ Q：HashMap和Hashtable的区别？
+ Q：HashMap在put、get元素的过程？体现了什么数据结构？ 
+ Q：如何解决Hash冲突？
+ Q：如何保证HashMap线程安全？什么原理？ 
+ Q：HashMap是有序的吗？如何实现有序？
+ Q：HashMap是如何扩容的？如何避免扩容？ 
+ Q：hashcode()的作用，与equal()有什么区别？
 
 ## 并发 
 Q：开启一个线程的方法有哪些？销毁一个线程的方法呢？
