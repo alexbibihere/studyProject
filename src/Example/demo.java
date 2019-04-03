@@ -12,20 +12,20 @@ public class demo {
          int  param[] = {1,12,23,123,12,3,12,31,23,1,3};
 
              for(int i = 0; i<param.length;i++){
-                 for (int j=i+1;j<param.length;j++){
-                     if (param[i]>param[j]){
-                         int temp = param[j];
-                         param[j] =param[i];
-                         param[i] =temp;
-                     }
+        for (int j=i+1;j<param.length;j++){
+            if (param[i]>param[j]){
+                int temp = param[j];
+                param[j] =param[i];
+                param[i] =temp;
+            }
 
-                 }
-             }
+        }
+    }
 
              for (int num :param){
-                 System.out.println(num+"");
-         }
-         }
+        System.out.println(num+"");
+    }
+}
 
 //    private static int getValue(int i){
 //        int result =0;
