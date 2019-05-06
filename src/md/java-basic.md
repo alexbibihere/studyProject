@@ -13,3 +13,8 @@
 
 
 基础语法、io、集合、多线程、框架 、分布式、高并发、微服务
+
+
+# Lock与synchronized区别
+- Lock是一个接口，synchronized是java中的一个关键字
+- Lock 需要手动释放锁，synchronized不需要手动释放锁
