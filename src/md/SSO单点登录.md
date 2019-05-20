@@ -6,3 +6,5 @@
 ## 根据cookie来实现单点登录
 每次登陆调用login接口，第一次登陆生成cookie 保存token
 响应到浏览器，之后子系统登陆根据浏览器的cookie所携带的token查询是否有值，有值就登录成功
+
+## 根据session实现单点登录
