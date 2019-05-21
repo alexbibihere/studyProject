@@ -8,3 +8,4 @@
 响应到浏览器，之后子系统登陆根据浏览器的cookie所携带的token查询是否有值，有值就登录成功
 
 ## 根据session实现单点登录
+退出只需要sesion.invalidate就行了，session无效就是退出状态
