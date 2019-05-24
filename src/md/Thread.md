@@ -75,3 +75,6 @@ start()：首先启动线程，然后再由jvm去调用该线程的run()方法
    
    修饰方法时，synchronized使用的就是当前方法所属的类对象的锁
    
+## 怎么启动线程
+
+thread.start(); 启动线程用start方法，启动后执行的是run方法.

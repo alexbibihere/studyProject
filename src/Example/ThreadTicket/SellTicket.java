@@ -1,4 +1,4 @@
-package Example;
+package Example.ThreadTicket;
 
 /**
  * @author: yan

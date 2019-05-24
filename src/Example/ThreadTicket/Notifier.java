@@ -1,4 +1,6 @@
-package Example;
+package Example.ThreadTicket;
+
+import Example.ThreadTicket.Message;
 
 /**
  * @author: yan
