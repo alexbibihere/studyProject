@@ -1,4 +1,4 @@
-package Example;
+package Example.test;
 
 /**
  * Created by Ryan on 2019/4/3/0003
