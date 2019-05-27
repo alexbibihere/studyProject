@@ -17,8 +17,8 @@ public class TwoSum {
 
             for(int i=0;i<sum.length-1;i++){
                 for(int j=i+1;j<sum.length;j++){
-                    int Su = sum[i]+sum[j];
-                    if(Su ==target){
+//                    int Su = ;
+                    if(sum[i]+sum[j] ==target){
                         abb[0] =i;
                         abb[1] =j;
                         System.out.println("abb[0]:"+i);
