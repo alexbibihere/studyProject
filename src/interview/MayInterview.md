@@ -51,3 +51,35 @@ unit： 线程池维护线程所允许的空闲时间的单位
 workQueue： 线程池所使用的缓冲队列
 
 handler： 线程池对拒绝任务的处理策略
+
+## ehcache和redis的区别
+
+ehcache直接在jvm虚拟机中缓存，速度快，效率高；但是缓存共享麻烦，集群分布式应用不方便。
+redis是通过socket访问到缓存服务，效率比ehcache低，比数据库要快很多，处理集群和分布式缓存方便，有成熟的方案。
+
+如果是单个应用或者对缓存访问要求很高的应用，用ehcache。
+如果是大型系统，存在缓存共享、分布式部署、缓存内容很大的，建议用redis。
+
+补充下：ehcache也有缓存共享方案，不过是通过RMI或者Jgroup多播方式进行广播缓存通知更新，缓存共享复杂，维护不方便；简单的共享可以，但是涉及到缓存恢复，大数据缓存，则不合适。
+
+## Autowire和Resource注解的区别
+
+Autowire是根据by-Type装配
+
+Resource是根据by-name装配
+
+## 模糊查询如何防止sql注入
+
+mysql: select * from t_user where name like concat('%', #{name}, '%')
+
+
+## Spring事务的传播机制
+
+## Hashmap的优缺点
+     优点：超级快速的查询速度，如果有人问你什么数据结构可以达到O(1)的时间复杂度，没错是HashMap
+
+             动态的可变长存储数据（和数组相比较而言）
+
+     缺点：需要额外计算一次hash值
+
+             如果处理不当会占用额外的空间
