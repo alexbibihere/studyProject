@@ -1,8 +1,11 @@
 重置blog需安装软件 
 
-blog待修改点 微信扫码登录 消息队列 es全文检索
+blog待修改点 **微信扫码登录 消息队列 es全文检索、图片上传功能**
 
 
 待学习知识点 springcloud dubbo +zookeeper 
 
 多线程、分布式锁、分布式session
+
+jdk8 lamda表达式
+
