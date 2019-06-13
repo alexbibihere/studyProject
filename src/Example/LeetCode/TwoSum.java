@@ -70,7 +70,6 @@ public class TwoSum {
                     break;
                 }
                 map.put(sum[i],i);
-                System.out.println("sum[i]:"+sum[i]+"-i:"+i);
             }
                 return abb;
         }
