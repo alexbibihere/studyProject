@@ -7,6 +7,6 @@ blog待修改点 **微信扫码登录 消息队列 es全文检索、图片上传
 
 多线程、分布式锁、分布式session
 
-jdk8 lamda表达式
+jdk8 lamda表达式、http知识点
 
 sql练习 牛客网刷题
