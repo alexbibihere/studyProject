@@ -14,3 +14,7 @@ CollectionsUtils工具类的学习
 
 
 sql练习 牛客网刷题
+
+
+
+Get请求方式不支持@RequestBody
