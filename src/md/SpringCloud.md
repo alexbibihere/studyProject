@@ -9,3 +9,12 @@ SpringCloud是一个分布式的整体解决方案，SpringCloud为开发者提�
   -   服务网关----Netflix Zuul
   -   分布式配置---SpringCloud Config
   -   动态代理---Feign 
+  
+  
+  
+## SpringCloud整合项目
+- eureka做注册中心
+- ribbon做负载均衡
+- feign做远程调用
+- hystrix做断路器
+- zuul做链路跟踪
