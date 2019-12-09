@@ -8,6 +8,7 @@ package Example.test;
 public class MatchPattern {
 
 
+    //匹配0-99  两位数的正整数
     public static void main(String[] args) {
         String pattern="1";
         String pattern1="0";
@@ -15,6 +16,8 @@ public class MatchPattern {
         String pattern3="06";
         String pattern4="15.4";
         String pattern5="1";
+
+
 
 
 

@@ -14,8 +14,8 @@ public class TwoSum {
     public static void main(String[] args) {
 //        public int[] twoSum(int[] nums, int target) {
             int sum[] = {2,7,11,5};
-            int[] abb = new int[2];
-            int target = 9;
+//            int[] abb = new int[2];
+            int target =18;
 
             //如果要判断数组中两数之和等于目标值
 
@@ -53,9 +53,9 @@ public class TwoSum {
     }
 
 
-        public static int[] twoSum(int[] nums, int target){
+        public static int[] twoSum(int[] sum, int target){
 
-            int[] sum = {2,7,11,5};
+//            int[] sum = {2,7,11,5};
             int[] abb = new int[2];
 
 
