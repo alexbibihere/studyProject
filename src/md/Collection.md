@@ -18,9 +18,9 @@ Vector 是线程安全的，因为使用了Sychronized方法，性能上比Array
 
 Set集合的特点是 元素不可重复
 
-Set常用子类：HahsSet、TreeSet、LinkedHashSet
+Set常用子类：HashSet、TreeSet、LinkedHashSet
 
-HahsSet：底层数据结构是哈希表(是一个元素为链表的数组)
+HashSet：底层数据结构是哈希表(是一个元素为链表的数组)
 
 TreeSet:底层数据结构是红黑树，保证元素的排序方式
 
