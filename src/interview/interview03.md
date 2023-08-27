@@ -18,4 +18,4 @@ SpringData
 
 sql索引失效情况 
 
-HashMap的理解：hashmap底层是数组+链表+红黑树
+HashMap的理解：hashmap底层是数组+链表

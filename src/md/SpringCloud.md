@@ -1,5 +1,5 @@
 # SpringCloud
-Sprin            
+Spring
   
 ## SpringCloud整合项目
 - eureka做注册中心
