@@ -7,6 +7,10 @@ Spring
 - feign做远程调用
 - hystrix做断路器
 - zuul做链路跟踪
+- Nacos 做服务治理
+- Sentinel 服务容错
+- Gateway 服务网关
+- Seata 分布式事务
 
 
 
