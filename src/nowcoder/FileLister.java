@@ -20,7 +20,7 @@ public class FileLister {
     }
 
     private static void RenameAllFiles() {
-        File root = new File("L:\\");
+        File root = new File("e:\\");
         // 指定要保存文件名的文本文件路径  I:\10.txt K:\番号\MOODYZ\miaa\新建文件夹
         String fileName = "K:\\番号\\MOODYZ\\miaa\\新建文件夹";
         try {
@@ -97,7 +97,7 @@ public class FileLister {
     }
 
     private static void listFiles(File dir, FileWriter writer) throws IOException {
-        String duplicateName = "[原创]";
+        String duplicateName = "HD_";
         // 获取目录下的所有文件和文件夹
         File[] files = dir.listFiles();
         if (files != null) {

@@ -59,7 +59,7 @@ redis-server redis.conf
 redis-server /usr/redis/redis.conf
 redis-server /usr/redis-4.0.9/redis.conf
 
-service mysqld restart 
+service mysqld restart  
 mysql -r root -p
 
 ## vim 编辑文件
