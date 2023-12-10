@@ -43,69 +43,69 @@
 ## 双写一致性：当修改了数据库的数据也要同时更新缓存的数据，缓存和数据库的数据要保持一致
 - 读操作： 缓存命中，直接返回； 缓存未命中查询数据库，写入缓存，设定超时时间
 - 写操作： 延时双删
-![Pasted image 20231209194215.png](pic/Pasted image 20231209194215.png)
+![Pasted image 20231209194215.png](attachments/Pasted image 20231209194215.png)
 
 ## 读写锁（强一致，性能不高）
-![Pasted image 20231209195502.png](pic/Pasted image 20231209195502.png)
+![Pasted image 20231209195502.png](attachments/Pasted image 20231209195502.png)
 
 读锁
-![Pasted image 20231209195537.png](pic/Pasted image 20231209195537.png)
+![Pasted image 20231209195537.png](attachments/Pasted image 20231209195537.png)
 
 写锁（排他锁）
-![Pasted image 20231209195551.png](pic/Pasted image 20231209195551.png)
+![Pasted image 20231209195551.png](attachments/Pasted image 20231209195551.png)
 
 ## 异步通知保证数据的最终一致性
-![Pasted image 20231209195848.png](pic/Pasted image 20231209195848.png)
+![Pasted image 20231209195848.png](attachments/Pasted image 20231209195848.png)
 
-![Pasted image 20231209195934.png](pic/Pasted image 20231209195934.png)
+![Pasted image 20231209195934.png](attachments/Pasted image 20231209195934.png)
 
 ==================
-![Pasted image 20231209200204.png](pic/Pasted image 20231209200204.png)
-![Pasted image 20231209200229.png](pic/Pasted image 20231209200229.png)
+![Pasted image 20231209200204.png](attachments/Pasted image 20231209200204.png)
+![Pasted image 20231209200229.png](attachments/Pasted image 20231209200229.png)
 
 # 持久化
 
 ## RDB
-![Pasted image 20231209210632.png](pic/Pasted image 20231209210632.png)
+![Pasted image 20231209210632.png](attachments/Pasted image 20231209210632.png)
 ### RDB的执行原理
-![Pasted image 20231209210940.png](pic/Pasted image 20231209210940.png)
+![Pasted image 20231209210940.png](attachments/Pasted image 20231209210940.png)
 
 
 ## AOF
 全称为 Append Only File(追加文件)，Redis处理的每一个写命令都会记录在AOF文件，可以看做是命令日志文件
-![Pasted image 20231209211336.png](pic/Pasted image 20231209211336.png)
+![Pasted image 20231209211336.png](attachments/Pasted image 20231209211336.png)
 
-![Pasted image 20231209211439.png](pic/Pasted image 20231209211439.png)
+![Pasted image 20231209211439.png](attachments/Pasted image 20231209211439.png)
 
 ===============
 
-![Pasted image 20231209211614.png](pic/Pasted image 20231209211614.png)
+![Pasted image 20231209211614.png](attachments/Pasted image 20231209211614.png)
 
 # 数据过期策略
 
 ## 惰性删除
 - 访问key的时候判断是否过期，如果过期，则删除
-  ![Pasted image 20231209211944.png](pic/Pasted image 20231209211944.png)
+  ![Pasted image 20231209211944.png](attachments/Pasted image 20231209211944.png)
 
 ## 定期删除
 - 定期检查一定量的key是否过期（SLOW模式+ FAST模式）
   ![Pasted image 20231209212112.png)(pic/Pasted image 20231209212112.png)
   ============
-  ![Pasted image 20231209212241.png](pic/Pasted image 20231209212241.png)
+  ![Pasted image 20231209212241.png](attachments/Pasted image 20231209212241.png)
 
 # 数据淘汰策略
-![Pasted image 20231209212613.png](pic/Pasted image 20231209212613.png)
-![Pasted image 20231209212725.png](pic/Pasted image 20231209212725.png)
+![Pasted image 20231209212613.png](attachments/Pasted image 20231209212613.png)
+![Pasted image 20231209212725.png](attachments/Pasted image 20231209212725.png)
 
 ================
-![Pasted image 20231209212920.png](pic/Pasted image 20231209212920.png)
+![Pasted image 20231209212920.png](attachments/Pasted image 20231209212920.png)
 # 分布式锁
 
 ## setnx
 
 ## redisson
 
-![Pasted image 20231210105457.png](pic/Pasted image 20231210105457.png)
+![Pasted image 20231210105457.png](attachments/Pasted image 20231210105457.png)
 
 # Redis 集群
 ## 主从复制
@@ -113,49 +113,49 @@ Redis搭建主从集群，一主多从 实现读写分离
 主集群负责写操作，从集群负责读操作，
 如果有写操作 ，则同步数据到从集群
 全量同步 和增量同步
-![Pasted image 20231210105745.png](pic/Pasted image 20231210105745.png)
+![Pasted image 20231210105745.png](attachments/Pasted image 20231210105745.png)
 
 
 ![Pasted image 20231210110118.png)(pic/Pasted image 20231210110118.png)
 
-![Pasted image 20231210110224.png](pic/Pasted image 20231210110224.png)
+![Pasted image 20231210110224.png](attachments/Pasted image 20231210110224.png)
 
 ===============
-![Pasted image 20231210111325.png](pic/Pasted image 20231210111325.png)
+![Pasted image 20231210111325.png](attachments/Pasted image 20231210111325.png)
 
 ## 哨兵模式
-![Pasted image 20231210111840.png](pic/Pasted image 20231210111840.png)
+![Pasted image 20231210111840.png](attachments/Pasted image 20231210111840.png)
 
 ## 哨兵选主的规则核心
 根据slave 的 offset值，值越大优先级越高
 
-![Pasted image 20231210112231.png](pic/Pasted image 20231210112231.png)
+![Pasted image 20231210112231.png](attachments/Pasted image 20231210112231.png)
 
 
 ==============
-![Pasted image 20231210112507.png](pic/Pasted image 20231210112507.png)
+![Pasted image 20231210112507.png](attachments/Pasted image 20231210112507.png)
 ## 分片集群
 
-![Pasted image 20231210113028.png](pic/Pasted image 20231210113028.png)
+![Pasted image 20231210113028.png](attachments/Pasted image 20231210113028.png)
 
 
 
 =======================
 
-![Pasted image 20231210113338.png](pic/Pasted image 20231210113338.png)
+![Pasted image 20231210113338.png](attachments/Pasted image 20231210113338.png)
 
 # Redis 为什么这么快
 
 纯内存操作 ，单线程， 支持IO多路复用
-![Pasted image 20231210113522.png](pic/Pasted image 20231210113522.png)
+![Pasted image 20231210113522.png](attachments/Pasted image 20231210113522.png)
 
 IO多路复用
 - select
 - poll
 - epoll
-  ![Pasted image 20231210114931.png](pic/Pasted image 20231210114931.png)
+  ![Pasted image 20231210114931.png](attachments/Pasted image 20231210114931.png)
 
 ## Redis网络模型
-![Pasted image 20231210115123.png](pic/Pasted image 20231210115123.png)
+![Pasted image 20231210115123.png](attachments/Pasted image 20231210115123.png)
 
 ================
