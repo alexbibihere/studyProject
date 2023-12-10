@@ -43,69 +43,69 @@
 ## 双写一致性：当修改了数据库的数据也要同时更新缓存的数据，缓存和数据库的数据要保持一致
 - 读操作： 缓存命中，直接返回； 缓存未命中查询数据库，写入缓存，设定超时时间
 - 写操作： 延时双删
-![](pic/Pasted image 20231209194215.png)
+![20231209194215.png](pic/Pasted image 20231209194215.png)
 
 ## 读写锁（强一致，性能不高）
-![](pic/Pasted image 20231209195502.png)
+![20231209195502.png](pic/Pasted image 20231209195502.png)
 
 读锁
-![](pic/Pasted image 20231209195537.png)
+![20231209195537.png](pic/Pasted image 20231209195537.png)
 
 写锁（排他锁）
-![](pic/Pasted image 20231209195551.png)
+![20231209195551.png](pic/Pasted image 20231209195551.png)
 
 ## 异步通知保证数据的最终一致性
-![](pic/Pasted image 20231209195848.png)
+![image 20231209195848.png](pic/Pasted image 20231209195848.png)
 
-![](pic/Pasted image 20231209195934.png)
+![image 20231209195934.png](pic/Pasted image 20231209195934.png)
 
 ==================
-![](pic/Pasted image 20231209200204.png)
-![](pic/Pasted image 20231209200229.png)
+![20231209200204.png](pic/Pasted image 20231209200204.png)
+![20231209200229.png](pic/Pasted image 20231209200229.png)
 
 # 持久化
 
 ## RDB
-![](pic/Pasted image 20231209210632.png)
+![20231209210632.png](pic/Pasted image 20231209210632.png)
 ### RDB的执行原理
-![](pic/Pasted image 20231209210940.png)
+![20231209210940.png](pic/Pasted image 20231209210940.png)
 
 
 ## AOF
 全称为 Append Only File(追加文件)，Redis处理的每一个写命令都会记录在AOF文件，可以看做是命令日志文件
-![](pic/Pasted image 20231209211336.png)
+![20231209211336.png](pic/Pasted image 20231209211336.png)
 
-![](pic/Pasted image 20231209211439.png)
+![20231209211439.png](pic/Pasted image 20231209211439.png)
 
 ===============
 
-![](pic/Pasted image 20231209211614.png)
+![20231209211614.png](pic/Pasted image 20231209211614.png)
 
 # 数据过期策略
 
 ## 惰性删除
 - 访问key的时候判断是否过期，如果过期，则删除
-  ![](pic/Pasted image 20231209211944.png)
+  ![20231209211944.png](pic/Pasted image 20231209211944.png)
 
 ## 定期删除
 - 定期检查一定量的key是否过期（SLOW模式+ FAST模式）
-  ![](pic/Pasted image 20231209212112.png)
+  ![20231209212112.png](pic/Pasted image 20231209212112.png)
   ============
-  ![](pic/Pasted image 20231209212241.png)
+  ![20231209212241.png](pic/Pasted image 20231209212241.png)
 
 # 数据淘汰策略
-![](pic/Pasted image 20231209212613.png)
-![](pic/Pasted image 20231209212725.png)
+![20231209212613.png](pic/Pasted image 20231209212613.png)
+![20231209212725.png](pic/Pasted image 20231209212725.png)
 
 ================
-![](pic/Pasted image 20231209212920.png)
+![20231209212920.png](pic/Pasted image 20231209212920.png)
 # 分布式锁
 
 ## setnx
 
 ## redisson
 
-![](pic/Pasted image 20231210105457.png)
+![20231210105457.png](pic/Pasted image 20231210105457.png)
 
 # Redis 集群
 ## 主从复制
@@ -113,49 +113,49 @@ Redis搭建主从集群，一主多从 实现读写分离
 主集群负责写操作，从集群负责读操作，
 如果有写操作 ，则同步数据到从集群
 全量同步 和增量同步
-![](pic/Pasted image 20231210105745.png)
+![20231210105745.png](pic/Pasted image 20231210105745.png)
 
 
-![](pic/Pasted image 20231210110118.png)
+![20231210110118.png](pic/Pasted image 20231210110118.png)
 
-![](pic/Pasted image 20231210110224.png)
+![20231210110224.png](pic/Pasted image 20231210110224.png)
 
 ===============
-![](pic/Pasted image 20231210111325.png)
+![20231210111325.png](pic/Pasted image 20231210111325.png)
 
 ## 哨兵模式
-![](pic/Pasted image 20231210111840.png)
+![20231210111840.png](pic/Pasted image 20231210111840.png)
 
 ## 哨兵选主的规则核心
 根据slave 的 offset值，值越大优先级越高
 
-![](pic/Pasted image 20231210112231.png)
+![20231210112231.png](pic/Pasted image 20231210112231.png)
 
 
 ==============
-![](pic/Pasted image 20231210112507.png)
+![20231210112507.png](pic/Pasted image 20231210112507.png)
 ## 分片集群
 
-![](pic/Pasted image 20231210113028.png)
+![20231210113028.png](pic/Pasted image 20231210113028.png)
 
 
 
 =======================
 
-![](pic/Pasted image 20231210113338.png)
+![20231210113338.png](pic/Pasted image 20231210113338.png)
 
 # Redis 为什么这么快
 
 纯内存操作 ，单线程， 支持IO多路复用
-![](pic/Pasted image 20231210113522.png)
+![20231210113522.png](pic/Pasted image 20231210113522.png)
 
 IO多路复用
 - select
 - poll
 - epoll
-  ![](pic/Pasted image 20231210114931.png)
+  ![20231210114931.png](pic/Pasted image 20231210114931.png)
 
 ## Redis网络模型
-![](pic/Pasted image 20231210115123.png)
+![20231210115123.png](pic/Pasted image 20231210115123.png)
 
 ================
