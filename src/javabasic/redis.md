@@ -1,5 +1,5 @@
 # 使用场景
-![img_4.png](pic/img_4.png)
+![img_4.png](attachments/img_4.png)
 # 缓存三兄弟（穿透、击穿、雪崩）、双写一致、持久化、数据过期策略、数据淘汰策略
 
 ## 缓存穿透
@@ -15,17 +15,17 @@
   -- Guava
 - 存在误判率：数组越小误判率就越大，数据越大误判率就越小，但同时带来更大的内存消耗
 - 一般设置在0.05
-  ![img_5.png](pic/img_5.png)
+  ![img_5.png](attachments/img_5.png)
 =====
-  ![img_6.png](pic/img_6.png)
+  ![img_6.png](attachments/img_6.png)
 ## 缓存击穿
 给某一个key设置了过期时间，当key过期的时候，恰好这时间点对这个key有大量的并发请求过来，这些并发请求可能会瞬间把DB压垮
 ### 解决方案一： 互斥锁  （强一致、性能差）
 ### 解决方案二： 逻辑过期 （高可用，性能优，不保证数据绝对一致）
-![img_7.png](pic/img_7.png)
+![img_7.png](attachments/img_7.png)
 =========
 
-![img_8.png](pic/img_8.png)
+![img_8.png](attachments/img_8.png)
 
 ## 缓存雪崩
 缓存雪崩是指在同一时段大量的缓存key同时失效 或者Redis服务宕机，导致大量请求到达数据库，带来巨大压力
@@ -35,9 +35,9 @@
 - 给缓存业务添加降级限流策略 （**降级可作为系统的保底策略，适用于  穿透 、击穿、雪崩**）
 - 给业务添加多级缓存
 =============
- ![img_9.png](pic/img_9.png)
+ ![img_9.png](attachments/img_9.png)
 
-![img_10.png](pic/img_10.png)
+![img_10.png](attachments/img_10.png)
 
 # 双写一致
 ## 双写一致性：当修改了数据库的数据也要同时更新缓存的数据，缓存和数据库的数据要保持一致
