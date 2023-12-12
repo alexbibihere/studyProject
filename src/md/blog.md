@@ -128,3 +128,6 @@ docker cp my.cnf 容器id:/etc/mysql    拷贝到容器里
 ![img_4.png](img_4.png)
 
 最后发现是打印日志超过太多了 导致内存爆了！
+
+## cat /dev/null >nohup.out 清除
+用清空命令 删除文件内容
