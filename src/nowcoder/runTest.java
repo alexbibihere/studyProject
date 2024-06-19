@@ -11,8 +11,8 @@ public class runTest {
 
     public static void main(String[] args){
 
-//    selectSort();
-    getVideoFiles();
+    selectSort();
+//    getVideoFiles();
 //            int sum =0;
 //            for(int i=1;i<=5;i++){
 //                sum += i;

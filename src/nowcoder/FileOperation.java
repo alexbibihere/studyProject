@@ -5,7 +5,11 @@ import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-//文件操作类
+/**
+ * @Author yandg
+ * @Date
+ * @Description 文件操作类
+ */
 public class FileOperation {
 
     public static void main(String[] args) throws IOException {
