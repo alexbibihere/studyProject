@@ -114,18 +114,18 @@ docker cp my.cnf 容器id:/etc/mysql    拷贝到容器里
 2023年12月10日23:17:47 博客重启一直失败
 ## df -h  检查磁盘内存
 通过检查阿里云服务器 发现linux内存满了 导致 doker上 mysql redis全都启动失败
-![img.png](img.png)
+![img.png](pic/img.png)
 ## du -sh /* |sort -nr
 在根目录下 使用命令 查找所有文件和目录的大小排序结果
-![img_1.png](img_1.png)
+![img_1.png](pic/img_1.png)
 可以看到是usr 文件夹占用了超大内存
 
 ## du -sh /usr/* |sort -nr
 继续使用 命令去定位usr 文件夹的问题
-![img_3.png](img_3.png)
+![img_3.png](pic/img_3.png)
 
 可以看到是 blogfile 文件 占用超过29G
-![img_4.png](img_4.png)
+![img_4.png](pic/img_4.png)
 
 最后发现是打印日志超过太多了 导致内存爆了！
 

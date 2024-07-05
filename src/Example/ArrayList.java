@@ -16,7 +16,6 @@ public class ArrayList {
         list.add("rls");
         list.add("1");
 
-
         //第一种方法 ：  用for each遍历list
         for(String str :list){
             System.out.println(str);

@@ -7,10 +7,14 @@ import java.util.Map;
 /**
  * @author: yan
  * @Date: 2019/5/26/0026 19:37
- * @Description:
+ * @Description: 两数之和
  */
 public class TwoSum {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 //        public int[] twoSum(int[] nums, int target) {
             int sum[] = {2,7,11,5};
@@ -52,12 +56,10 @@ public class TwoSum {
         System.out.println(Arrays.toString(ints));
     }
 
-
         public static int[] twoSum(int[] sum, int target){
 
 //            int[] sum = {2,7,11,5};
             int[] abb = new int[2];
-
 
             Map<Integer,Integer> map = new HashMap<>(sum.length);
             for(int i=0;i<sum.length;i++){
